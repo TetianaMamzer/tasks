@@ -109,6 +109,7 @@
 
 // console.log(createNewString(arrStr));
 
+
 // Дан список чисел: [4, 8, 12, 16, 20]. С помощью map, вычтите из каждого числа 2.
 
 // const arrNumbers = [4, 8, 12, 16, 20];
@@ -209,6 +210,14 @@
 
 // console.log(createNewString(arrStrings));
 
+// ---------------------------
+
+// const arrStrings = ["apple", "banana", "cherry"];
+
+// const newArr = arrStrings.map(arr => arr.replace('a', 'x'));
+
+// console.log(newArr)
+
 
 // Дан список строк: ["hello", "world", "python", "programming"]. С помощью map, выберите только строки, длина которых больше 5 символов.
 
@@ -251,3 +260,88 @@
 // }
 
 // console.log(isTwin(arrNumbers));
+
+// ------------------
+
+// const arrNumbers = [1, 3, 5, 7, 9];
+
+// const isTwin = arrNumbers.every(n => n % 2 !== 0);
+
+// console.log(isTwin)
+
+// Проверьте, содержат ли все строки в списке ["apple", "banana", "cherry"] букву "a".
+
+// const arrCh = ["apple", "banana", "cherry"];
+
+// const isContain = arrCh.every(ch => ch.includes('a'));
+
+// console.log(isContain);
+
+// -----------------------
+
+// const arrCh = ["apple", "banana", "cherry"];
+
+// const isContain = (arr, ch) => {
+//   for (const word of arr) {
+//     if (!word.includes(ch)) {
+//       return false;
+//     }
+//   }
+
+//   return true;
+// }
+
+// console.log(isContain(arrCh, 'a'))
+
+
+// Проверьте, заканчивается ли каждое число в списке [4, 8, 12, 16, 20] на цифру 4.
+
+// const arrNumbers = [4, 8, 12, 16, 20];
+
+// const isContain = (arr, numb) => {
+//   for (const n of arr) {
+//     if (!n.toString().endsWith(numb)) {
+//       return false;
+//     }
+//   }
+//   return true;
+// }
+
+// console.log(isContain(arrNumbers, 4))
+
+// --------------------------------
+
+// const arrNumbers = [4, 8, 12, 16, 20];
+
+// const isContain = arrNumbers.every(n => n.toString().endsWith(4))
+
+// console.log(isContain)
+
+
+// Проверьте, содержит ли каждый элемент списка [1, 2, 3, 4, 5] цифру 2.
+
+// const arrNumbers = [1, 2, 3, 4, 5];
+
+// const isContain = arrNumbers.every(n => n.toString().includes('2'));
+
+// console.log(isContain);
+
+// -----------------------
+
+// const arrNumbers = [1, 2, 3, 4, 5];
+
+// const isContain = (arr, number) => {
+//   for (const numb of arr) {
+//     if (!numb.toString().includes(number)) {
+//       return false;
+//     }
+//   }
+
+//   return true;
+// }
+
+// console.log(isContain(arrNumbers, 2))
+
+
+
+
