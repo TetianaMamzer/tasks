@@ -114,13 +114,13 @@
 //         newWorld += str[i];
 //       }
 //     }
-    
+
 //     newArr.push(newWorld);
-    
+
 //   }
 
 //   return newArr;
-    
+
 // }
 
 // console.log(createNewArr(stringArr))
@@ -138,7 +138,7 @@
 //         newWorld += world[i];
 //       }
 //   }
-  
+
 //   return newWorld;
 // })
 
@@ -184,8 +184,59 @@
 //         newWorld += world[i];
 //       }
 //   }
-  
+
 //   return newWorld;
 // })
 
 // console.log(createNewArr)
+
+// Реализуйте функцию every для объекта с использованием callback-функции.
+// const numbersArr = [1, 2, 3, 6, 9, 10, -1];
+
+// const isAllPositive = numbersArr.every((n) => isPositive(n))
+
+// function isPositive(n) {
+//   return n > 0 ? true : false;
+// }
+
+// console.log(isAllPositive);
+
+// Создайте функцию, которая принимает массив чисел и callback.
+// const numbersArr = [1, 2, 3, 6, 9, 10];
+
+// function isDuble(n) {
+//   return n % 2 === 0;
+// };
+
+// function takeCallback(arr, callback) {
+//   let newArr = [];
+//   for (const number of arr) {
+//     if (callback(number)) {
+//        newArr.push(number)
+//      };
+//   }
+
+//   return newArr
+// }
+
+// console.log(takeCallback(numbersArr, isDuble));
+
+//  Вызовите callback для каждого числа, возводя его в квадрат.
+// const numbersArr = [1, 2, 3, 6, 9, 10];
+
+// const newArr = numbersArr.map(number => takeCallback(number))
+
+// function takeCallback(number) {
+//   return number**2;
+// }
+
+// console.log(newArr)
+// Реализуйте функцию find для массива с использованием callback-функции.
+
+// const numbersArr = [1, 2, 3, 6, 9, 10, 1];
+
+// function findFirstDuble(number, index, arr) {
+//   return arr.indexOf(number) !== index;
+// }
+
+// console.log(numbersArr.find(findFirstDuble))
