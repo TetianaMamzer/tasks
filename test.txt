@@ -1,0 +1,41 @@
+let arrayLike = {
+  0: "Привіт",
+  1: "Світ",
+  length: 2
+};
+
+arrayLike[Symbol.iterator] = function() {
+
+  // 2. Далі, for..of працює тільки з цим ітератором, запитуючи у нього наступні значення
+  return {
+   current: this.from,
+   last: this.to,
+
+    next() {
+      // 4. він повинен повертати значення як об’єкт {done:.., value :...}
+      if (this.current <= this.last) {
+        return { done: false, value: this.current++ };
+      } else {
+        return { done: true };
+      }
+    }
+  };
+};
+
+
+for (const item of arrayLike) {
+  console.log(item);
+}
+let arr = Array.from(arrayLike); // (*)
+
+for (const item of arr) {
+  console.log(item);
+
+}
+
+console.log(arrayLike, arr)
+// alert(arr.pop()); // Світ (метод працює)
+
+
+
+// andrijklyon@gmail.com

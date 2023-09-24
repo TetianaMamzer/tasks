@@ -1,0 +1,45 @@
+#main-title {
+  color: red;
+}
+
+.paragraph {
+  background: gray;
+}
+
+#main-link {
+  color: green;
+  text-decoration: none;
+}
+.image {
+  border: 2px solid #000;
+}
+.list {
+  list-style-type: lower-alpha;
+}
+.form input {
+  border-radius: 20px;
+}
+
+.button {
+  background-color: orange;
+  color: #fff;
+
+}
+
+.table {
+  border: 1px solid black;
+  width: 100%;
+
+}
+.table td {
+  border: 1px solid black;
+  text-align: center;
+  padding: 8px; 
+}
+
+.container {
+  padding: 20px;
+}
+.higkight {
+  font-size: calc(100% + 2px);
+}
